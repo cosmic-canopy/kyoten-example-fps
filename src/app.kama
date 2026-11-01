@@ -1,0 +1,11 @@
+import { core::println, kyoten::version };
+
+// The FPS example: a first-person shooter built on kyoten the way any game would be, and a starting point a
+// developer can download from the engine manager. The engine is never written for it. What it contains first is
+// decided in kyoten's design spike (docs/design/examples.md in the kyoten repository).
+fn uint8 main()
+{
+    println(s: "fps example, on kyoten");
+    println(s: version());
+    return 0;
+}
