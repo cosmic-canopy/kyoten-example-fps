@@ -11,15 +11,15 @@ kyoten repository).
 ## Building it today
 
 **Each kyoten example is its own repository.** The engine is not published yet, so this one depends on it by path
-(`"kyoten": { "path": "../../engine" }`) and builds **inside a kyoten checkout, as `games/fps`**. kyoten's
-`.gitignore` leaves `games/` out, so examples never weigh on an engine-only checkout.
+(`"kyoten": { "path": "../../../engine" }`) and builds **inside a kyoten checkout, as `examples/games/fps`**. kyoten's
+`.gitignore` leaves `examples/games/` out, so examples never weigh on an engine-only checkout.
 
 ```sh
-git clone <kyoten-url> kyoten
+git clone https://github.com/cosmic-canopy/kyoten.git kyoten
 cd kyoten
-git clone <kyoten-fps-url> games/fps
-kama pkg install games/fps/kama.json
-kama run games/fps/kama.json            # prints "fps example, on kyoten"
+git clone https://github.com/cosmic-canopy/kyoten-example-fps.git examples/games/fps
+kama pkg install examples/games/fps/kama.json
+kama run examples/games/fps/kama.json           # prints "fps example, on kyoten"
 ```
 
 Once the engine is published, an example depends on a released engine version, and the engine manager hands out a

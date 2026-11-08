@@ -5,7 +5,7 @@
   "kind": "executable",
   "entry": "src/app.kama",
   "dependencies": {
-    "kyoten": { "path": "../../engine" }
+    "kyoten": { "path": "../../../engine" }
   },
   "modules": {
     ".": { "visibility": "internal" }
